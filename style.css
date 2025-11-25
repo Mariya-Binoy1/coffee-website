@@ -1,0 +1,100 @@
+/*Imprting the google font named miniver*/
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*The width and height you set for an element should include padding and border.So the element will not grow bigger when you add padding or border.*/
+}
+
+/*:root is a selector that refers to the top-most element of the page.In HTML pages, :root = the <html> element.We mainly use it to define CSS variables (custom properties) that can be used anywhere on the page.*/
+:root{
+
+    /* COLORS */
+    --white-color:#fff;
+    --dark-color:#252525;
+    --primary-color:#3b141c;
+    --secondary-color:#f3961c;
+    --light-pink-color:#faf4f5;
+    --medium-gray-color:#ccc;
+
+    /* FONT SIZE */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-1: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* Font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Border radius */
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    /* Site max width */
+    --site-max-width: 1300px;
+}
+
+/* Styling for the whole site */
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img{
+    width: 100%;
+
+}
+
+/* Navbar styling */
+header{
+    background: var(--primary-color);
+}
+
+header .navbar{
+display: flex;
+padding: 20px;
+align-items: center;
+justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text{
+
+    color: var(--white-color);
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 10px;
+
+}
+
+.navbar .nav-menu .nav-link{
+    color: var(--white-color);
+    padding: 10px 18px;
+    background: var(--secondary-color);
+    border-radius: var(--border-radius-m);
+    font-size: var(--font-size-m);
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover{
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
